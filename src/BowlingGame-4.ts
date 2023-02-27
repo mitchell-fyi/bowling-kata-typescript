@@ -8,7 +8,7 @@ export default class BowlingGame {
   public score(): number {
     let score = 0;
 
-    for (let rollIndex = 0; rollIndex < this.rolls.length; rollIndex++) {
+    for (let rollIndex = 0; rollIndex < this.rolls.length - 2; rollIndex++) {
       if (this.isStrike(rollIndex)) {
         score += 10 + this.strikeBonus(rollIndex);
       } else if (this.isSpare(rollIndex)) {
@@ -28,7 +28,7 @@ export default class BowlingGame {
   }
 
   private strikeBonus(rollIndex: number): number {
-    return this.rolls[rollIndex + 1] + this.rolls[rollIndex + 2];
+    return this.rolls[rollIndex + 1] + this.rolls[rollIndex + 2] || 0;
   }
 
   private isSpare(rollIndex: number): boolean {
