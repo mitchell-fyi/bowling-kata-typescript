@@ -6,9 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:1": "esrun ./src/BowlingGame-1.spec",
+    "test:2": "esrun ./src/BowlingGame-2.spec",
+    "test:3": "esrun ./src/BowlingGame-3.spec",
+    "test:4": "esrun ./src/BowlingGame-4.spec",
+    "test:5": "esrun ./src/BowlingGame-5.spec",
+    "test:6": "esrun ./src/BowlingGame-6.spec"
   },
   "devDependencies": {
+    "@digitak/esrun": "^3.2.19",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
