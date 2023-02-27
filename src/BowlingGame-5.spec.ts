@@ -5,6 +5,13 @@ import "./BowlingGame-3.spec";
 import "./BowlingGame-4.spec";
 import BowlingGame from "./BowlingGame-5";
 
+it("should return 7 when there are no bonus throws", () => {
+  const rolls = [...Array(18).fill(0), 3, 4];
+  const game = new BowlingGame(rolls);
+
+  assertStrictEqual(game.score(), 7);
+});
+
 it("should return 13 when a spare is scored in the 10th frame", () => {
   const rolls = [...Array(18).fill(0), 5, 5, 3];
   const game = new BowlingGame(rolls);
