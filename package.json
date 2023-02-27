@@ -11,8 +11,7 @@
     "test:2": "esrun ./src/BowlingGame-2.spec",
     "test:3": "esrun ./src/BowlingGame-3.spec",
     "test:4": "esrun ./src/BowlingGame-4.spec",
-    "test:5": "esrun ./src/BowlingGame-5.spec",
-    "test:6": "esrun ./src/BowlingGame-6.spec"
+    "test:5": "esrun ./src/BowlingGame-5.spec"
   },
   "devDependencies": {
     "@digitak/esrun": "^3.2.19",

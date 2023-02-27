@@ -6,7 +6,7 @@ It includes a basic test runner and framework for writing tests in [./src/testin
 
 This app is designed to show when, how and what to write tests for.
 
-It is split into 6 testing phases, with each stage adding more functionality and getting increasingly complex.
+It is split into 5 testing phases, with each stage adding more functionality and getting increasingly complex.
 
 You can run it using the following CLI commands:
 
@@ -15,6 +15,5 @@ You can run it using the following CLI commands:
     npm run test:3
     npm run test:4
     npm run test:5
-    npm run test:6
 
-With test 6 being the full implementation.
+With test 5 being the full implementation.
